@@ -1,0 +1,11 @@
+<!-- Barra de navegación superior: Solo se muestra si NO estamos en el login -->
+<header *ngIf="showNavbar" class="app-header">
+  <nav class="nav-container">
+    <a routerLink="/dashboard" class="nav-brand">Sistemas Internos INDECI</a>
+  </nav>
+</header>
+
+<!-- Contenedor principal donde Angular renderiza las rutas o los microfrontends remotos -->
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
