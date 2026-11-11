@@ -23,4 +23,8 @@ export class AppComponent {
       this.showNavbar = !event.url.includes('/login');
     });
   }
+
+  irAlHome(): void {
+  this.router.navigate(['/home']);
+}
 }

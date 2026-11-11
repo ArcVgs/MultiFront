@@ -9,6 +9,7 @@ export default withNativeFederation({
   exposes: {
     './Routes': './src/app/app.routes.ts',
     './LoginComponent': './src/app/auth/pages/login/login.component.ts',
+    './AuthInterceptor': './src/app/auth/interceptors/auth.interceptor.ts',
   },
 
   //shareScope: autoShareScope({level: 'minor'}),
